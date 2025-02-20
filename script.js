@@ -11,16 +11,13 @@ const texts = [
     "Fine, keep doing this if it makes you happy.<br>But the conversation is just going to repeat now."
 ];
 
-// Force reset index to 0 when reloading
 sessionStorage.setItem("screenIndex", 0);
 let screenIndex = 0;
 
-// Preload audio for instant playback
 const clickSound = new Audio("click.ogg");
 clickSound.preload = "auto";
 clickSound.volume = 1.0;
 
-// Function to update the screen dynamically
 function updateScreen() {
     const isDarkScreen = screenIndex % 2 === 0;
     
@@ -32,10 +29,8 @@ function updateScreen() {
     document.getElementById("clickImage").src = isDarkScreen ? "image 1.png" : "image 2.png";
 }
 
-// Load initial state
 updateScreen();
 
-// Click event to toggle changes dynamically
 document.getElementById("clickImage").addEventListener("click", function(event) {
     event.preventDefault();
 
