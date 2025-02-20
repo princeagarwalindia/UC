@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Apercu Mono Pro", sans-serif; /* Ensure the font applies */
+    font-family: "Apercu Mono Pro", sans-serif;
 }
 
 html, body {
@@ -56,10 +56,9 @@ html, body {
 .logo {
     width: 60px;
     height: auto;
-    display: none; /* Default hidden, shown only on white screens */
+    display: none;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .content {
         bottom: 120px;
